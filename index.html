@@ -16,24 +16,38 @@
   <body>
     <div class="container">
       <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid" src="img/cleaning.jpg" alt="marge">
+        </div>
         <div class="col">
           <form id="toDoForm">
             <div class="form-group">
               <label for="task">Task:</label>
-              <input id="task" class="form-control">
+              <input id="task" autocomplete="off" class="form-control" value="Sweep the ceiling">
               <label for="time">Time:</label>
-              <input id="time" class="form-control">
+              <input id="time" autocomplete="off" class="form-control" value="Spring">
               <label for="city">City:</label>
-              <input id="city" class="form-control">
+              <input id="city" autocomplete="off" class="form-control" value="Portland">
               <label for="state">State:</label>
-              <input id="state" class="form-control">
+              <input id="state" autocomplete="off" class="form-control" value ="OR">
               <label for="country">Country:</label>
-              <input id="country" class="form-control">
+              <input id="country" autocomplete="off" class="form-control" value="US">
             </div>
             <button type="submit" class="btn btn-info">Add</button>
           </form>
+
+          <hr>
+          <h4>Checklist:</h4>
+          <form id="checklist">
+            <div id="checkedItems"class="form-group">
+
+            </div>
+          </form>
         </div>
         <div class="col">
+        <ul id="description" class="list-unstyled">
+
+        </ul>
         </div>
       </div>
     </div>

@@ -1,0 +1,14 @@
+#description {
+  display: none;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+#checkedItems input {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}

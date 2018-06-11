@@ -28,7 +28,31 @@ $(function() {
 
     newChore.place.push(newPlace);
 
-    
+    $("form#checklist .form-group").append("<span><input type='checkbox' class='chore'><p>" + newChore.task + "</p></span>");
+
+    $(".chore").siblings().last().click(function() {
+      console.log("here");
+      $("ul#description").show().html("<li>" + newChore.task + "</li>" + "<li>" + newChore.time + "</li>" + "<li>" + newChore.place[0].thisPlace() + "</li>");
+    });
+
+    // $(".crossOut").last().click(function() {
+    //   if($(this).parent().hasClass("strikethrough")){
+    //     $(this).parent().removeClass("strikethrough");
+    //   } else {
+    //     $(this).parent().addClass("strikethrough");
+    //   }
+    // });
+
+    $(".chore").change(function() {
+      if(this.checked) {
+        $(this).parent().addClass("strikethrough");
+        // alert("checked");
+      } else {
+        $(this).parent().removeClass("strikethrough");
+        // alert("not");
+      }
+    });
+
   });
 
 });
