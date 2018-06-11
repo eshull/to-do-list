@@ -28,9 +28,7 @@
 
 ## Links
 
-* Eric's Repo: (https://github.com/eshull/beep-boop)
-
-* Eric's Site: (https://eshull.github.io/beep-boop/)
+* Eric's Repo: (https://github.com/eshull/)
 
 ## Known Bugs
 

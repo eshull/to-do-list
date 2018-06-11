@@ -1,5 +1,11 @@
+/*html * {
+  outline: 1px solid black;
+}*/
+
 #description {
   display: none;
+  padding: 10%;
+  font-size: 50px;
 }
 
 .strikethrough {
@@ -11,4 +17,29 @@
   float: left;
   margin-top: 5px;
   margin-right: 5px;
+}
+
+
+body {
+  background-image: url(../img/background.jpg);
+}
+
+.container {
+  background: white;
+}
+
+.col-md-12 img{
+  width: 100%;
+}
+.col-md-12 h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 50%;
+  border: 2px solid white;
+  font-size: 53px;
+  letter-spacing: 3px;
+
+
+
 }
